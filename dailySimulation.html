@@ -12,13 +12,14 @@
   <script>
     const output = document.getElementById("output");
     
-    // add function
+    // Add activity function
     function addActivities(text) {
       const p = document.createElement("p");
       p.textContent = text;
       output.appendChild(p);
     }
 
+    // Simulation events
     setTimeout(() => {
       addActivities("6:30 AM - Wake up");
     }, 1000);
@@ -43,6 +44,14 @@
       addActivities("4:30 PM - Finish Studying");
     }, 6000);
 
+    // Enhancement or twist
+    const msg = "👏👏👏 You can do it! 👏👏👏";
+    const randomTime = Math.floor(Math.random() * 2000) + 4000;
+
+    setTimeout(() => {
+      addActivities(msg);
+    }, randomTime);
+  
   </script>
 
 </body>
