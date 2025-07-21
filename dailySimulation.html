@@ -12,7 +12,36 @@
   <script>
     const output = document.getElementById("output");
     
-    // # ADD CODE HERE!
+    // add function
+    function addActivities(text) {
+      const p = document.createElement("p");
+      p.textContent = text;
+      output.appendChild(p);
+    }
+
+    setTimeout(() => {
+      addActivities("6:30 AM - Wake up");
+    }, 1000);
+    
+    setTimeout(() => {
+      addActivities("7:00 AM - Walking & Running");
+    }, 2000);
+
+    setTimeout(() => {
+      addActivities("8:00 AM - Making coffee");
+    }, 3000);
+    
+    setTimeout(() => {
+      addActivities("9:00 AM - Studying");
+    }, 4000);
+    
+    setTimeout(() => {
+      addActivities("12:30 PM - Lunch");
+    }, 5000);
+    
+    setTimeout(() => {
+      addActivities("4:30 PM - Finish Studying");
+    }, 6000);
 
   </script>
 
